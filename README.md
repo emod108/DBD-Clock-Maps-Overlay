@@ -1,6 +1,7 @@
 This program allows you to easily overlay Dead by Daylight clock maps over any other desktop application including the game itself.
 After choosing a map you can set its position on your screen, size and opacity.
 You are also able to use any other image. PNGs with transparent parts are also supported.
+
 Made using C++ and Qt Framework.
 
 Download link: https://drive.google.com/file/d/1X9KREPinMMgpLtDjoXmPbVLhiI5lZ6l3/view?usp=sharing
