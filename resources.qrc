@@ -1,0 +1,94 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>resources/Img/Icon.ico</file>
+    </qresource>
+    <qresource prefix="/AUTOHAVEN_WRECKERS">
+        <file>resources/Callouts/AUTOHAVEN_WRECKERS/Azarovs Resting Place.png</file>
+        <file>resources/Callouts/AUTOHAVEN_WRECKERS/Blood Lodge.png</file>
+        <file>resources/Callouts/AUTOHAVEN_WRECKERS/Gas Heaven.png</file>
+        <file>resources/Callouts/AUTOHAVEN_WRECKERS/Wreckers.png</file>
+        <file>resources/Callouts/AUTOHAVEN_WRECKERS/Wretched Shop.png</file>
+    </qresource>
+    <qresource prefix="/BACKWATER_SWAMP">
+        <file>resources/Callouts/BACKWATER_SWAMP/Grim Pantry.png</file>
+        <file>resources/Callouts/BACKWATER_SWAMP/Pale Rose.png</file>
+    </qresource>
+    <qresource prefix="/SPRINGWOOD">
+        <file>resources/Callouts/SPRINGWOOD/Badham Preschool I.png</file>
+        <file>resources/Callouts/SPRINGWOOD/Badham Preschool II.png</file>
+        <file>resources/Callouts/SPRINGWOOD/Badham Preschool III.png</file>
+        <file>resources/Callouts/SPRINGWOOD/Badham Preschool IV.png</file>
+        <file>resources/Callouts/SPRINGWOOD/Badham Preschool V.png</file>
+    </qresource>
+    <qresource prefix="/COLDWIND_FARM">
+        <file>resources/Callouts/COLDWIND_FARM/Fractured Cowshed.png</file>
+        <file>resources/Callouts/COLDWIND_FARM/Rancid Abbatoir.png</file>
+        <file>resources/Callouts/COLDWIND_FARM/Rotten Fields.png</file>
+        <file>resources/Callouts/COLDWIND_FARM/The Thompson House.png</file>
+        <file>resources/Callouts/COLDWIND_FARM/Torment Creek.png</file>
+    </qresource>
+    <qresource prefix="/CROTUS_PRENN_ASYLUM">
+        <file>resources/Callouts/CROTUS_PRENN_ASYLUM/Disturbed Ward.png</file>
+        <file>resources/Callouts/CROTUS_PRENN_ASYLUM/Father Campbells Chapel.png</file>
+    </qresource>
+    <qresource prefix="/DVARKA_DEEPWOOD">
+        <file>resources/Callouts/DVARKA_DEEPWOOD/Nostromo Wreckage.png</file>
+        <file>resources/Callouts/DVARKA_DEEPWOOD/Toba Landing.png</file>
+    </qresource>
+    <qresource prefix="/FORSAKEN_BONEYARD">
+        <file>resources/Callouts/FORSAKEN_BONEYARD/Eyrie of Crows.png</file>
+    </qresource>
+    <qresource prefix="/GIDEON_MEAT_PLANT">
+        <file>resources/Callouts/GIDEON_MEAT_PLANT/The Game.png</file>
+    </qresource>
+    <qresource prefix="/GRAVE_OF_GLENVALE">
+        <file>resources/Callouts/GRAVE_OF_GLENVALE/Dead Dawg Saloon.png</file>
+    </qresource>
+    <qresource prefix="/HAWKINS_NATIONAL_LABORATORY">
+        <file>resources/Callouts/HAWKINS_NATIONAL_LABORATORY/The Underground Complex.png</file>
+    </qresource>
+    <qresource prefix="/LERYS_MEMORIAL_INSTITUTE">
+        <file>resources/Callouts/LERYS_MEMORIAL_INSTITUTE/Treatment Theatre.png</file>
+    </qresource>
+    <qresource prefix="/MACMILLAN_ESTATE">
+        <file>resources/Callouts/MACMILLAN_ESTATE/Coal Tower II.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Coal Tower.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Groaning Storehouse II.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Groaning Storehouse.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Ironworks Of Misery II.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Ironworks Of Misery.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Shelter Woods II.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Shelter Woods.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Suffocation Pit II.png</file>
+        <file>resources/Callouts/MACMILLAN_ESTATE/Suffocation Pit.png</file>
+    </qresource>
+    <qresource prefix="/ORMOND">
+        <file>resources/Callouts/ORMOND/Mount Ormond Resort.png</file>
+    </qresource>
+    <qresource prefix="/RACCOON_CITY">
+        <file>resources/Callouts/RACCOON_CITY/RPD East Wing.png</file>
+        <file>resources/Callouts/RACCOON_CITY/RPD West Wing.png</file>
+    </qresource>
+    <qresource prefix="/RED_FOREST">
+        <file>resources/Callouts/RED_FOREST/Mothers Dwelling.png</file>
+        <file>resources/Callouts/RED_FOREST/Temple of Purgation.png</file>
+    </qresource>
+    <qresource prefix="/THE_DECIMATED_BORGO">
+        <file>resources/Callouts/THE_DECIMATED_BORGO/The Shattered Square.png</file>
+    </qresource>
+    <qresource prefix="/SILENT_HILL">
+        <file>resources/Callouts/SILENT_HILL/Midwich Elementary School.png</file>
+        <file>resources/Callouts/SILENT_HILL/Midwich Elementary School (BOTTOM).png</file>
+        <file>resources/Callouts/SILENT_HILL/Midwich Elementary School (TOP).png</file>
+    </qresource>
+    <qresource prefix="/WITHERED_ISLE">
+        <file>resources/Callouts/WITHERED_ISLE/Garden of Joy.png</file>
+    </qresource>
+    <qresource prefix="/YAMAOKA_ESTATE">
+        <file>resources/Callouts/YAMAOKA_ESTATE/Family Residence.png</file>
+        <file>resources/Callouts/YAMAOKA_ESTATE/Sanctum of Wrath.png</file>
+    </qresource>
+    <qresource prefix="/HADDONFIELD">
+        <file>resources/Callouts/HADDONFIELD/Lampkin Lane.png</file>
+    </qresource>
+</RCC>

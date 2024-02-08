@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>441</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="menuLayout">
+      <item>
+       <layout class="QHBoxLayout" name="imageLayout">
+        <item>
+         <layout class="QVBoxLayout" name="startShowingLayout">
+          <item>
+           <widget class="QLabel" name="mainWindowImage">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>202</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>No image</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QPushButton" name="startShowingButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 170, 0);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Show Overlay</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="chooseImageLayout">
+          <item>
+           <layout class="QVBoxLayout" name="chooseLayout">
+            <item>
+             <layout class="QVBoxLayout" name="chooseRealmLayout">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="chooseRealmLabel">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>400</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Choose a Realm</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignVCenter">
+               <widget class="QComboBox" name="chooseRealmComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(85, 170, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="chooseMapLayout">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="chooseMapLabel">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>400</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Choose a Map</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignVCenter">
+               <widget class="QComboBox" name="chooseMapComboBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(85, 170, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QPushButton" name="chooseOwnImageButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(85, 0, 255);</string>
+            </property>
+            <property name="text">
+             <string>Choose Your Own Image</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="optionsLayout">
+        <item>
+         <layout class="QVBoxLayout" name="overlayPositionLayout">
+          <item>
+           <layout class="QVBoxLayout" name="overlayOffsetXLayout">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="overlayOffsetXLabel">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>X offset: 0%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignVCenter">
+             <widget class="QSlider" name="overlayOffsetXSlider">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="overlayOffsetYLayout">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="overlayOffsetYLabel">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Y offset: 0%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignVCenter">
+             <widget class="QSlider" name="overlayOffsetYSlider">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="overlayOptionsLayout">
+          <item>
+           <layout class="QVBoxLayout" name="overlaySizeLayout">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="overlaySizeLabel">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Overlay size: 0%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignVCenter">
+             <widget class="QSlider" name="overlaySizeSlider">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="overlayOpacityLayout">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="overlayOpacityLabel">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Overlay opacity: 0%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignVCenter">
+             <widget class="QSlider" name="overlayOpacitySlider">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
