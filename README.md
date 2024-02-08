@@ -3,6 +3,7 @@ After choosing a map you can set its position on your screen, size and opacity.
 You are also able to use any other image. PNGs with transparent parts are also supported.
 
 Download link: https://drive.google.com/file/d/1X9KREPinMMgpLtDjoXmPbVLhiI5lZ6l3/view?usp=sharing
+
 Clockmaps by Hens333: https://hens333.com/callouts
 
 Known issues:
