@@ -83,6 +83,7 @@
     </qresource>
     <qresource prefix="/WITHERED_ISLE">
         <file>resources/Callouts/WITHERED_ISLE/Garden of Joy.png</file>
+        <file>resources/Callouts/WITHERED_ISLE/Greenville Square.png</file>
     </qresource>
     <qresource prefix="/YAMAOKA_ESTATE">
         <file>resources/Callouts/YAMAOKA_ESTATE/Family Residence.png</file>

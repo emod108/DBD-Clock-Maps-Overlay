@@ -55,12 +55,6 @@ protected:
     // Resizes image label in main window in case of main window resize
     void resizeEvent(QResizeEvent *event) override;
 private:
-    /*// Updates main window image label
-    void updateMainWindowImage();
-
-    // Updates image overlay window label
-    void updateOverlayLabel();*/
-
     // Updates image on this label
     void updateImageLabel(QLabel *label);
 
