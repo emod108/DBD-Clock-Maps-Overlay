@@ -5,7 +5,7 @@ You are also able to use any other image. PNGs with transparent parts are also s
 
 Made using C++ and Qt Framework.
 
-Download link: https://drive.google.com/file/d/1X9KREPinMMgpLtDjoXmPbVLhiI5lZ6l3/view?usp=sharing
+Download link: https://drive.google.com/file/d/1b5uqW5x66Q7CwoGjE0mmI7ia4tqbJGTR/view?usp=sharing
 
 Clockmaps by Hens333: https://hens333.com/callouts
 
