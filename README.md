@@ -13,3 +13,4 @@ Clockmaps by Hens333: https://hens333.com/callouts
 
 Known issues:
 1) Image may not show up if you play in fullscreen mode. For this you should use windowed fullscreen or windowed modes.
+2) May not work if you have more than one monitor
