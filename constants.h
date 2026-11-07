@@ -4,7 +4,6 @@
 #include <QVector>
 #include <QPair>
 #include <QString>
-#include <string>
 
 // Array which holds pairs of realms' names and directories they are located in
 static const QVector<QPair<const QString, const QString>> REALM_PATH_PAIRS = {
@@ -29,6 +28,7 @@ static const QVector<QPair<const QString, const QString>> REALM_PATH_PAIRS = {
     {"The Decimated Borgo", "THE_DECIMATED_BORGO"},
     {"Withered Isle", "WITHERED_ISLE"},
     {"Yamaoka Estate", "YAMAOKA_ESTATE"},
+    {"Sleepless District", "SLEEPLESS_DISTRICT"}
 };
 
 static const QString CHOOSE_MAP_MESSAGE = "Choose a map";

@@ -37,6 +37,7 @@
     </qresource>
     <qresource prefix="/FORSAKEN_BONEYARD">
         <file>resources/Callouts/FORSAKEN_BONEYARD/Eyrie of Crows.png</file>
+        <file>resources/Callouts/FORSAKEN_BONEYARD/Dead Sands.png</file>
     </qresource>
     <qresource prefix="/GIDEON_MEAT_PLANT">
         <file>resources/Callouts/GIDEON_MEAT_PLANT/The Game.png</file>
@@ -64,6 +65,9 @@
     </qresource>
     <qresource prefix="/ORMOND">
         <file>resources/Callouts/ORMOND/Mount Ormond Resort.png</file>
+        <file>resources/Callouts/ORMOND/Ormond II.png</file>
+        <file>resources/Callouts/ORMOND/Ormond III.png</file>
+        <file>resources/Callouts/ORMOND/Ormond Lake Mine.png</file>
     </qresource>
     <qresource prefix="/RACCOON_CITY">
         <file>resources/Callouts/RACCOON_CITY/RPD East Wing.png</file>
@@ -75,6 +79,7 @@
     </qresource>
     <qresource prefix="/THE_DECIMATED_BORGO">
         <file>resources/Callouts/THE_DECIMATED_BORGO/The Shattered Square.png</file>
+        <file>resources/Callouts/THE_DECIMATED_BORGO/Forgotten Ruins.png</file>
     </qresource>
     <qresource prefix="/SILENT_HILL">
         <file>resources/Callouts/SILENT_HILL/Midwich Elementary School.png</file>
@@ -84,12 +89,19 @@
     <qresource prefix="/WITHERED_ISLE">
         <file>resources/Callouts/WITHERED_ISLE/Garden of Joy.png</file>
         <file>resources/Callouts/WITHERED_ISLE/Greenville Square.png</file>
+        <file>resources/Callouts/WITHERED_ISLE/Fallen Refuge.png</file>
+        <file>resources/Callouts/WITHERED_ISLE/Freddy Fazbears Pizza.png</file>
     </qresource>
     <qresource prefix="/YAMAOKA_ESTATE">
         <file>resources/Callouts/YAMAOKA_ESTATE/Family Residence.png</file>
         <file>resources/Callouts/YAMAOKA_ESTATE/Sanctum of Wrath.png</file>
+        <file>resources/Callouts/YAMAOKA_ESTATE/Sanctum of Wrath II.png</file>
+        <file>resources/Callouts/YAMAOKA_ESTATE/Family Residence II.png</file>
     </qresource>
     <qresource prefix="/HADDONFIELD">
         <file>resources/Callouts/HADDONFIELD/Lampkin Lane.png</file>
+    </qresource>
+    <qresource prefix="/SLEEPLESS_DISTRICT">
+        <file>resources/Callouts/SLEEPLESS_DISTRICT/Tricksters Delusion.png</file>
     </qresource>
 </RCC>

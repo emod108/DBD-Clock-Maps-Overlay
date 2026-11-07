@@ -3,6 +3,7 @@
 
 #include <QLabel>
 #include <QMainWindow>
+#include "ui_mainwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -38,7 +39,7 @@ public slots:
     void chooseOwnImage();
 
     // Sets chosen image
-    void setImage(const QString url);
+    void setImage(const QString& url);
 
     // Sets image overlay X position
     void setOverlayOffsetX(const int offset);
@@ -56,19 +57,22 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 private:
     // Updates image on this label
-    void updateImageLabel(QLabel *label);
+    void updateImageLabel(QLabel& label);
 
     // Builds path to maps
     QString buildPath(const int index);
 
     // Main ui object
-    Ui::MainWindow *ui;
+    Ui::MainWindow ui;
 
     // Overlay window
-    QWidget *overlayWindow = nullptr;
+    QWidget overlayWindow;
 
-    // Overlay label, which contains image
-    QLabel *overlayLabel = nullptr;
+    // Window main layout
+    QGridLayout overlayMainLayout;
+
+    // Overlay label which contains image
+    QLabel overlayLabel;
 
     // Overlay opacity, can be between 0.0 and 1.0
     qreal overlayOpacity = 1.0;
