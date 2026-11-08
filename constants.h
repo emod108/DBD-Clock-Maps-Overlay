@@ -24,13 +24,14 @@ static const QVector<QPair<const QString, const QString>> REALM_PATH_PAIRS = {
     {"Raccoon City", "RACCOON_CITY"},
     {"Red Forest", "RED_FOREST"},
     {"Silent Hill", "SILENT_HILL"},
+    {"Sleepless District", "SLEEPLESS_DISTRICT"},
     {"Springwood", "SPRINGWOOD"},
     {"The Decimated Borgo", "THE_DECIMATED_BORGO"},
     {"Withered Isle", "WITHERED_ISLE"},
-    {"Yamaoka Estate", "YAMAOKA_ESTATE"},
-    {"Sleepless District", "SLEEPLESS_DISTRICT"}
+    {"Yamaoka Estate", "YAMAOKA_ESTATE"}
 };
 
+static constexpr int NO_REALM_CHOSEN_INDEX = 0;
 static const QString CHOOSE_MAP_MESSAGE = "Choose a map";
 
 #endif // CONSTANTS_H

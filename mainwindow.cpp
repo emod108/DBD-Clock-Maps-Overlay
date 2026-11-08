@@ -9,12 +9,12 @@
 #include "constants.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), ui(Ui::MainWindow()), overlayWindow(QWidget(nullptr)), overlayMainLayout(&overlayWindow), overlayLabel(QLabel(&overlayWindow))
+    : QMainWindow(parent), ui(Ui::MainWindow()), overlayWindow(nullptr), overlayMainLayout(&overlayWindow), overlayLabel(&overlayWindow)
 {
     // Setting up UI
     ui.setupUi(this);
 
-    // Making image overlay close when the main window closes
+    // Making image overlay close when the main window closes. I don't know why it requires false instead of true
     overlayWindow.setAttribute(Qt::WA_QuitOnClose, false);
 
     // Making image overlay window transparent, so only its contents (image) is visible
@@ -31,10 +31,16 @@ MainWindow::MainWindow(QWidget *parent)
     // Creating image overlay label to contain image
     overlayMainLayout.addWidget(&overlayLabel);
 
-    // Populating realms combo box
+    // Default "No map selected"
     ui.chooseMapComboBox->addItem(REALM_PATH_PAIRS[0].second);
+
+    // Populating realms combobox
     for (const auto &el : REALM_PATH_PAIRS)
+    {
         ui.chooseRealmComboBox->addItem(el.first);
+    }
+
+    // Connecting realm and map selection functionality
     connect(ui.chooseRealmComboBox, &QComboBox::currentIndexChanged, this, &MainWindow::getMaps);
     connect(ui.chooseMapComboBox, &QComboBox::currentIndexChanged, this, &MainWindow::pickMap);
 
@@ -75,9 +81,11 @@ MainWindow::~MainWindow()
 void MainWindow::toggleOverlay()
 {
     // Showing image
-    if (overlayWindow.isHidden()) {
+    if (overlayWindow.isHidden())
+    {
         // Checking if an image is chosen
-        if (currentImage == "") {
+        if (currentImage.isEmpty())
+        {
             QMessageBox msgBox(this);
             msgBox.setWindowTitle("No image chosen!");
             msgBox.setText("Please, choose an image first to continue.");
@@ -94,7 +102,8 @@ void MainWindow::toggleOverlay()
         // Updating image overlay label
         updateImageLabel(overlayLabel);
     } // Hiding image
-    else {
+    else
+    {
         overlayWindow.hide();
         ui.startShowingButton->setStyleSheet("background-color: rgb(0, 170, 0); color: rgb(0, 0, 0);");
         ui.startShowingButton->setText("Show Overlay");
@@ -103,8 +112,10 @@ void MainWindow::toggleOverlay()
 
 void MainWindow::resizeOverlay()
 {
-    if (currentImage == "")
+    if (currentImage.isEmpty())
+    {
         return;
+    }
 
     // Getting image size
     const QImageReader reader(currentImage);
@@ -134,8 +145,9 @@ void MainWindow::getMaps(const int index)
     // Clrear previous maps
     ui.chooseMapComboBox->clear();
 
-    // If index is 0 or less, then no items are choosen
-    if (index <= 0) {
+    // Checking if a realm is selected
+    if (index == NO_REALM_CHOSEN_INDEX)
+    {
         ui.chooseMapComboBox->addItem(REALM_PATH_PAIRS[0].second);
         return;
     }
@@ -146,8 +158,11 @@ void MainWindow::getMaps(const int index)
     // Getting all maps
     const QDir directory(pathToMaps);
     QStringList maps = directory.entryList();
+
+    // Adding them to the combobox
     ui.chooseMapComboBox->addItem(CHOOSE_MAP_MESSAGE);
-    for (auto &el : maps) {
+    for (auto &el : maps)
+    {
         el.remove(".png");
         ui.chooseMapComboBox->addItem(el);
     }
@@ -155,15 +170,19 @@ void MainWindow::getMaps(const int index)
 
 void MainWindow::pickMap()
 {
-    // Getting the chosen realm
+    // Getting the chosen realm and checking if it's actually selected
     const int realmIndex = ui.chooseRealmComboBox->currentIndex();
-    if (realmIndex <= 0)
+    if (realmIndex == NO_REALM_CHOSEN_INDEX)
+    {
         return;
+    }
 
     // Getting the chosen map
     const QString chosenMap = ui.chooseMapComboBox->currentText();
     if (chosenMap == CHOOSE_MAP_MESSAGE)
+    {
         return;
+    }
 
     // Getting the path to all maps from this realm
     const QString pathToMaps = buildPath(realmIndex);
@@ -173,8 +192,10 @@ void MainWindow::pickMap()
     const QStringList maps = directory.entryList();
 
     // Finding out which map it is
-    for (const auto &el : maps) {
-        if (el == chosenMap + ".png") {
+    for (const auto &el : maps)
+    {
+        if (el == chosenMap + ".png")
+        {
             setImage(pathToMaps + el);
             return;
         }
@@ -189,7 +210,8 @@ void MainWindow::chooseOwnImage()
     dialog.setNameFilter("Images (*.png *.jpeg *.jpg)");
 
     // Get selected file
-    if (dialog.exec()) {
+    if (dialog.exec())
+    {
         const QStringList fileName = dialog.selectedFiles();
         setImage(fileName[0]);
     }
@@ -197,6 +219,15 @@ void MainWindow::chooseOwnImage()
 
 void MainWindow::setImage(const QString& url)
 {
+    // Checking if image is valid
+    if (QPixmap(url).isNull())
+    {
+        QMessageBox::warning(this, "Warning", "Failed to load the image, likely it's corrupted.\n"
+                                              "Make sure that it's proper png/jpg/jpeg.\n"
+                                              "Simply renaming webp to png for example won't work.");
+        return;
+    }
+
     // Setting new image
     currentImage = url;
 
@@ -263,12 +294,11 @@ void MainWindow::resizeEvent(QResizeEvent* event)
 
 void MainWindow::updateImageLabel(QLabel& label)
 {
-    if (currentImage == "")
+    if (currentImage.isEmpty())
+    {
         return;
-
-    QPixmap pixmap(currentImage);
-    pixmap = pixmap.scaled(label.size(), Qt::KeepAspectRatio);
-    label.setPixmap(pixmap);
+    }
+    label.setPixmap(QPixmap(currentImage).scaled(label.size(), Qt::KeepAspectRatio));
 }
 
 QString MainWindow::buildPath(const int index)

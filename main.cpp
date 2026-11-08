@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     // Creating main window
     MainWindow w;
     w.setWindowTitle("Image Overlay");
-    w.setStyleSheet("background-color: rgb(166, 144, 176);");
+    w.setStyleSheet("background-color: rgb(100, 100, 100);");
     w.show();
 
     // Starting the process
