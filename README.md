@@ -6,12 +6,13 @@ Download link can be found in Releases. Currently updated for Dead by Daylight 1
 
 Clockmaps by Hens333: https://hens333.com/callouts
 
-![image](https://github.com/emod108/DBD-Clock-Maps-Overlay/assets/91344595/30d10a06-1227-4944-b882-a4ee567dea6b)
+<img width="548" height="516" alt="image" src="https://github.com/user-attachments/assets/d01ad8c5-8ef6-4b06-b067-b0f9d69dec13" />
 
-Made using C++ and Qt Framework. No AI was used.
+Made using C++ and Qt Framework.
 
 Known issues:
 1) Overlay won't show up if you play in fullscreen mode. You must use windowed fullscreen or windowed modes. I don't know how to fix it.
 
 Future plans:
 1) Make the process of adding custom maps easier
+2) Adding an editable config file
